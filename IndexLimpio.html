@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IndexLimpio</title>
+    <link rel="stylesheet" href="stylelimpio.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="control.js"></script>
+</head>
+<body class="body">
+<video autoplay muted loop id="myVideo">
+    <source src="imagenes/forest.mp4" type="video/mp4">
+</video>
+<video autoplay muted loop id="myvideo2">
+    <source src="imagenes/forest_rain.mp4" type="video/mp4">
+</video>
+<div>
+  <a href="jugar.html" style="text-decoration: none" class="jugar" id="jugar" onmouseover="vid1()" onmouseout="vid0()">JUGAR</a>
+</div>
+<div class="grid1">
+    <div class="registrate">
+        <a href="Registrate.html" style="text-decoration: none">Registrate</a>
+    </div>
+    <div class="sobrenosotros">
+        <a href="SobreNostros.html" style="text-decoration: none">Sobre el Proyecto</a>
+    </div>
+    <div class="mejorestiempos">
+        <a href="MejoresTiempos.html" style="text-decoration: none">Mejores Tiempos</a>
+    </div>
+</div>
+<img src="gif/KingKnight2.gif" class="knight" id="knight2">
+<!--
+<img src="gif/KingKnight.gif" class="knight2" id="knight">
+-->
+<audio id="swing">
+    <source src="audio/swing.mp3" type="audio/mpeg">
+    <source src="audio/swing2.mp3" type=audio/mpeg">
+    <script>
+        let boton = document.querySelector(".jugar")
+
+        boton.addEventListener("mouseover", () => {
+            let etiquetaAudio = document.createElement("audio")
+            etiquetaAudio.setAttribute("src", "audio/swing.mp3")
+            etiquetaAudio.play()
+        })
+        boton.addEventListener("mouseout", () => {
+            let etiquetaAudio = document.createElement("audio")
+            etiquetaAudio.setAttribute("src", "audio/swing2.mp3")
+            etiquetaAudio.play()
+        })
+    </script>
+</audio>
+</body>
+</html>
