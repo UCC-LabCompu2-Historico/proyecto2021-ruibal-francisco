@@ -26,6 +26,7 @@
     text-align: center;
     font-family: 'VT323', monospace;
     color: white;
+    background-color: black;
     background-image: url("imagenes/fores.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
