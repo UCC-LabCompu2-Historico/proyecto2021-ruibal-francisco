@@ -1,9 +1,9 @@
 # JumpKing
- Autor: Ruibal Francisco.
- Link: (https://ucc-labcompu2.github.io/proyecto2021-ruibal-francisco/IndexLimpio.html)
- Nuestra página cuenta con 4 apartados uno para jugar, otro para saber mi info, y otro para saber los mejores tiempos y otro para registrarse .
- Además, principlalmente contendrá un videojuego y un cronómetro para registrar el tiempo jugado (y así competir y aparecer en los mejores tiempos).
- Utilizamos: HTML, CSS, y JavaScript.
+- [ ] Autor: Ruibal Francisco.
+- [ ] Link: (https://ucc-labcompu2.github.io/proyecto2021-ruibal-francisco/IndexLimpio.html)
+- [ ] Nuestra página cuenta con 4 apartados uno para jugar, otro para saber mi info, y otro para saber los mejores tiempos y otro para registrarse .
+- [ ] Además, principlalmente contendrá un videojuego y un cronómetro para registrar el tiempo jugado (y así competir y aparecer en los mejores tiempos).
+- [ ] Utilce: HTML, CSS, y JavaScript.
 
 ### Requisitos del Primer Parcial
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2021-ApellidoAlumno1-ApellidoAlumno2"
