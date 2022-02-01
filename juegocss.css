@@ -1,6 +1,9 @@
 body{
     text-align: center;
-    background-color: grey;
+    background-color: lightskyblue;
+    background-image: url("https://coolwallpapers.me/picsup/2992474-pixel-art-fantasy-art-digital-art-mountains-castle___mixed-wallpapers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 canvas {
