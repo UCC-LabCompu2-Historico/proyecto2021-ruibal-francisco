@@ -1,5 +1,5 @@
-/*estas dos funciones se encargan de cambiar el video de la pagina principal y cambiar el gif del caballero*/
 
+/*estas dos funciones se encargan de cambiar el video de la pagina principal y cambiar el gif del caballero*/
 function vid1() {
     /*document.getElementById('myVideo').src = 'imagenes/forest_rain.mp4';*/
     document.getElementById('myvideo2').style.zIndex = '2';

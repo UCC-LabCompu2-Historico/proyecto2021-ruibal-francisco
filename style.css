@@ -7,10 +7,10 @@
 }
 
 div{
-    border: 2px solid #101820FF;
+    border: none;
     margin: 10px;
     padding: 5px 30px;
-    background: rgba(5, 1, 1, 0.33);
+    background: transparent;
     border-radius: 5px;
 }
 body{
