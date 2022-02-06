@@ -1,3 +1,14 @@
+/* Rellena los bordes del canvas
+* @method Border
+* @param x
+* @param y
+* @param width
+* @param heigth
+* @param type
+* @return no devuelve valo
+*/
+
+
 function Border (x, y, width, height, type){
     this.x = x;
     this.y = y;

@@ -1,3 +1,4 @@
+
 function Player(x,y) {
     //variables del jugadpr
     this.x = x;
@@ -10,11 +11,15 @@ function Player(x,y) {
     this.width = 50;
     this.height = 100;
 
-    function meta(){
-        if (this.x === 1100 && this.y === 165){
-            alert("Felicitaciones ha terminado el juego");
+    //cronómetro
+    while(this.x < 1095 && this.x > 1125 && this.y < 200 && this.y > 220){
+        var timer = 0;
+        timer = timer + 1;
+    }
 
-        }
+    //alerta
+    if (this.x > 1080 && this.x < 240 && this.y > 180 && this.y < 220){
+        alert("Felicitaciones ha terminado el juego");
     }
 
     this.step = function (){
