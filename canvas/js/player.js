@@ -1,6 +1,11 @@
+/*Función encargada del movimiento del jugador
+*@method Player
+*@x - posición x del jugador
+*@y - posición y del jugador
+*/
 
 function Player(x,y) {
-    //variables del jugadpr
+    //variables del jugador
     this.x = x;
     this.y = y;
     this.xspeed = 0;
@@ -9,9 +14,11 @@ function Player(x,y) {
     this.maxSpeed = 10;
     this.active = true;
     this.width = 50;
-    this.height = 100;
-
-    //cronómetro
+    this.height = 100;}
+    this.start;
+    this.end;
+    this.totalTime;
+/*    //cronómetro
     while(this.x < 1095 && this.x > 1125 && this.y < 200 && this.y > 220){
         var timer = 0;
         timer = timer + 1;
@@ -21,6 +28,7 @@ function Player(x,y) {
     if (this.x > 1080 && this.x < 240 && this.y > 180 && this.y < 220){
         alert("Felicitaciones ha terminado el juego");
     }
+*/
 
     this.step = function (){
         //Movimiento
@@ -114,6 +122,13 @@ function Player(x,y) {
     this.draw = function (){
         ctx.fillStyle= "green";
         ctx.fillRect(this.x, this.y, this.width, this.height);
-    }
 
-}
+        if (this.x > 1080 && this.x < 1240 && this.y > 180 && this.y < 220){
+            this.end = Date.now();
+            this.start = localStorage.getItem("startTime");
+            this.totalTime = this.end - this.start;
+            localStorage.setItem("tiempoActual", this.totalTime/1000);
+            alert("Felicitaciones ha terminado el juego. Tu tiempo fue: " + this.totalTime/1000 + " seg");
+            window.location.replace("MejoresTiempos.html");
+        }
+    }

@@ -1,11 +1,10 @@
 /* Rellena los bordes del canvas
 * @method Border
-* @param x
-* @param y
-* @param width
-* @param heigth
-* @param type
-* @return no devuelve valo
+* @param x -
+* @param y -
+* @param width -
+* @param heigth -
+* @param type -
 */
 
 

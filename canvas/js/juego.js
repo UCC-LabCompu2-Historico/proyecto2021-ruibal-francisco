@@ -1,3 +1,5 @@
+//Documentar todas las funciones
+
 //Crea variables para dibujar
 var canvas;
 var ctx;
@@ -12,6 +14,12 @@ var upKey;
 var rightKey;
 var downKey;
 var leftKey;
+var start = Date.now();
+localStorage.setItem("startTime", start);
+
+/* Crea jugador y bordes
+* @method function
+*/
 
 // Corre una vez la página carge
 window.onload = function(){
@@ -25,7 +33,6 @@ window.onload = function(){
     //Crear jugador
     player= new Player(300, 200);
 
-    //Creamos el borde
     for (let i = 0; i < 6; i++){
         borders.push(new Border(0 + 100* i, 620, 100, 100,1));
     }
@@ -51,6 +58,9 @@ function step(){
     draw();
 }
 
+/* Vacia el canvas dibuja el jugador y el borde
+* @method draw
+*/
 function draw(){
     //Vaciar el canvas
     ctx.fillStyle = "white";
@@ -64,7 +74,9 @@ function draw(){
         borders[i].draw();
     }
 }
-
+/* Crea los event listeners
+* @method SetupInputs
+*/
 function setupInputs() {
     document.addEventListener("keydown", function (event){
         if (event.key === "w" || event.key === "ArrowUp"){
@@ -89,7 +101,9 @@ function setupInputs() {
         }
     });
 }
-
+/* Verifica si hay intersecciones
+* @method checkIntersection
+*/
 function checkIntersection(r1, r2){
     if (r1.x >= r2.x + r2.width) {
         return false;
