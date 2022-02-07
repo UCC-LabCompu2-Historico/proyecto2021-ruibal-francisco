@@ -22,7 +22,15 @@
     }
 }
 
-#gr{
+#reg{
+    text-decoration: none;
+}
+
+#sep{
+    text-decoration: none;
+}
+
+#met{
     text-decoration: none;
 }
 

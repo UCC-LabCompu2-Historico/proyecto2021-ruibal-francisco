@@ -1,7 +1,7 @@
 body{
     background-color: #1f232c;
     background-image: url("imagenes/3307917.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 
 * {
