@@ -23,6 +23,6 @@ function cargarPuntaje(){
     let tiempoActual = localStorage.getItem("tiempoActual");
     let nombreJugadorActual = localStorage.getItem("formData");
     nombreJugadorActual = JSON.parse(nombreJugadorActual);
-    document.getElementById("nombreJug").innerHTML = nombreJugadorActual;
+    document.getElementById("nombreJug").innerHTML = nombreJugadorActual.usuario;
     document.getElementById("jugTiempoAct").innerHTML = tiempoActual;
 }
