@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Mejores Tiempos</title>
     <link rel="stylesheet" href="mejorestiempos.css">
+    <script type="text/javascript" src="registrate.js"></script>
 </head>
-<body>
+<body onload="cargarPuntaje()">
 <nav>
     <a href="IndexLimpio.html"> <img src="imagenes/house-icon.png" class="casa"></a>
 </nav>
@@ -25,38 +26,8 @@
         <tbody>
         <tr>
             <td class="rank">1</td>
-            <td class="nick">Sc0utOP</td>
-            <td class="sp">6.308</td>
-        </tr>
-        <tr>
-            <td class="rank">2</td>
-            <td class="nick">MortaL</td>
-            <td class="sp">6.301</td>
-        </tr>
-        <tr>
-            <td class="rank">4</td>
-            <td class="nick">CarryMinati</td>
-            <td class="sp">5.108</td>
-        </tr>
-        <tr>
-            <td class="rank">5</td>
-            <td class="nick">CarryMinati</td>
-            <td class="sp">5.108</td>
-        </tr>
-        <tr>
-            <td class="rank">6</td>
-            <td class="nick">CarryMinati</td>
-            <td class="sp">5.108</td>
-        </tr>
-        <tr>
-            <td class="rank">7</td>
-            <td class="nick">CarryMinati</td>
-            <td class="sp">5.108</td>
-        </tr>
-        <tr>
-            <td class="rank">8</td>
-            <td class="nick">CarryMinati</td>
-            <td class="sp">5.108</td>
+            <td class="nick"><div id="nombreJug"></div></td>
+            <td class="sp"><div id="jugTiempoAct"></div></td>
         </tr>
         </tbody>
     </table>
