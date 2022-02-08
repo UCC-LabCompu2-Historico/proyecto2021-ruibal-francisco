@@ -16,7 +16,7 @@ function Player(x,y) {
     this.width = 50;
     this.height = 100;
     this.start;
-    this.end;
+    this.end = null;
     this.totalTime;
     /*    //cronómetro
         while(this.x < 1095 && this.x > 1125 && this.y < 200 && this.y > 220){
@@ -128,6 +128,8 @@ function Player(x,y) {
             this.start = localStorage.getItem("startTime");
             this.totalTime = this.end - this.start;
             localStorage.setItem("tiempoActual", this.totalTime / 1000);
+        }
+        if (this.end != null){
             alert("Felicitaciones ha terminado el juego. Tu tiempo fue: " + this.totalTime / 1000 + " seg");
             window.location.replace("MejoresTiempos.html");
         }
